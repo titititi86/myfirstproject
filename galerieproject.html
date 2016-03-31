@@ -4,8 +4,89 @@
 		<title>Galerie</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="galerieproject.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Lightbox -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		
+
+		<style>
+			body {
+				display: block;
+			}
+
+			.page-header {
+				border-bottom: 1px solid black;
+				margin-bottom: 100px;
+			}
+
+			h1 {
+				font-family: "Didot";
+				font-size: 38px;
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: normal;
+				line-height: 40px;
+			}
+
+			h1 a {
+				color: black;
+			}
+
+			h1 a:hover {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			.list {
+				list-style-type: none;
+				text-align: right;
+				font-family: Gotham-Book;
+				font-size: 10px;
+				text-transform: uppercase;
+				cursor: initial;
+			}
+
+			a {
+				text-decoration: none;
+				color: #77787b;
+			}
+
+			.list a:hover {
+				text-decoration: underline;
+				text-decoration-color: black;
+				color: #77787b;
+			}
+
+			.list li.active a {
+				color: black;
+			}
+
+			.footer {
+				margin-top: 50px;
+			}
+
+			.pager {
+				margin: 20px 150px;
+			}
+
+			#copyright {
+				text-align: right;
+				padding: 20px 50px 20px 0px;
+			}
+
+		</style>
+
+		
 	</head>
 
 	<body>
@@ -31,46 +112,46 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div id="tonkin">
-							<a target="_blank" href="http://41.media.tumblr.com/6f59d791282bd23ef780857b089cd462/tumblr_n2b7hgOP6n1qm0kqro1_1280.jpg"><img src="http://41.media.tumblr.com/6f59d791282bd23ef780857b089cd462/tumblr_n2b7hgOP6n1qm0kqro1_1280.jpg" alt="Phoebe Tonkin" class="img-responsive"></a>
+							<a href="http://41.media.tumblr.com/6f59d791282bd23ef780857b089cd462/tumblr_n2b7hgOP6n1qm0kqro1_1280.jpg" data-lightbox="gallery" data-title="Phoebe Tonkin" class="thumbnail"><img src="http://41.media.tumblr.com/6f59d791282bd23ef780857b089cd462/tumblr_n2b7hgOP6n1qm0kqro1_1280.jpg" alt="Phoebe Tonkin"></a>
 						</div>
 
 						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/3c38468187b626f43dccfecd4b63b9a9/tumblr_mkipkjEt9r1r4upvao1_1280.jpg"><img src="http://40.media.tumblr.com/3c38468187b626f43dccfecd4b63b9a9/tumblr_mkipkjEt9r1r4upvao1_1280.jpg" alt="Kate Winslet" class="img-responsive"></a>
+							<a href="http://40.media.tumblr.com/3c38468187b626f43dccfecd4b63b9a9/tumblr_mkipkjEt9r1r4upvao1_1280.jpg" data-lightbox="gallery" data-title="Kate Winslet" class="thumbnail"><img src="http://40.media.tumblr.com/3c38468187b626f43dccfecd4b63b9a9/tumblr_mkipkjEt9r1r4upvao1_1280.jpg" alt="Kate Winslet"></a>
 						</div>
 						<div>
-							<a target="_blank" href="http://41.media.tumblr.com/e469a6ae9ace5597500d96d98e3bf06c/tumblr_ms5l4szvRE1rjd5qdo1_500.png"><img src="http://41.media.tumblr.com/e469a6ae9ace5597500d96d98e3bf06c/tumblr_ms5l4szvRE1rjd5qdo1_500.png" alt="Jessica Alba" class="img-responsive"></a>
+							<a href="http://41.media.tumblr.com/e469a6ae9ace5597500d96d98e3bf06c/tumblr_ms5l4szvRE1rjd5qdo1_500.png" data-lightbox="gallery" data-title="Jessica Alba" class="thumbnail"><img src="http://41.media.tumblr.com/e469a6ae9ace5597500d96d98e3bf06c/tumblr_ms5l4szvRE1rjd5qdo1_500.png" alt="Jessica Alba"></a>
 						</div>
 						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/tumblr_m0abpbuLTz1rqleiso1_500.jpg"><img src="http://40.media.tumblr.com/tumblr_m0abpbuLTz1rqleiso1_500.jpg" alt="Fanning Sister's" class="img-responsive"></a>
-						</div>
-
-					</div>
-
-					<div class="col-md-4">
-						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/85b07d7c081d05267200c6749b353942/tumblr_ntsmp2JOHl1u3u3h0o1_500.png"><img src="http://40.media.tumblr.com/85b07d7c081d05267200c6749b353942/tumblr_ntsmp2JOHl1u3u3h0o1_500.png" alt="Cara Delevingne" class="img-responsive"></a>
-						</div>
-						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/tumblr_m9z45v1ayE1qeaf1zo1_500.png"><img src="http://40.media.tumblr.com/tumblr_m9z45v1ayE1qeaf1zo1_500.png" alt="Kate Bosworth" class="img-responsive"></a>
-						</div>
-						<div>
-							<a target="_blank" href="http://36.media.tumblr.com/tumblr_lt2f3aQR841qh7wudo1_400.jpg"><img src="http://36.media.tumblr.com/tumblr_lt2f3aQR841qh7wudo1_400.jpg" alt="Kate Moss" class="img-responsive"></a>
+							<a href="http://40.media.tumblr.com/tumblr_m0abpbuLTz1rqleiso1_500.jpg" data-lightbox="gallery" data-title="Fanning Sister's" class="thumbnail"><img src="http://40.media.tumblr.com/tumblr_m0abpbuLTz1rqleiso1_500.jpg" alt="Fanning Sister's"></a>
 						</div>
 
 					</div>
 
 					<div class="col-md-4">
 						<div>
-							<a target="_blank" href="http://36.media.tumblr.com/fb057f00c43eb5229de25a2338d9388f/tumblr_n4dl5dE8XU1qdksdzo1_r1_500.png"><img src="http://36.media.tumblr.com/fb057f00c43eb5229de25a2338d9388f/tumblr_n4dl5dE8XU1qdksdzo1_r1_500.png" alt="Emma Stone" class="img-responsive"></a>
+							<a href="http://40.media.tumblr.com/85b07d7c081d05267200c6749b353942/tumblr_ntsmp2JOHl1u3u3h0o1_500.png" data-lightbox="gallery" data-title="Cara Delevingne" class="thumbnail"><img src="http://40.media.tumblr.com/85b07d7c081d05267200c6749b353942/tumblr_ntsmp2JOHl1u3u3h0o1_500.png" alt="Cara Delevingne"></a>
 						</div>
 						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/7747230608fea774b5a84e571cd482b2/tumblr_ms6p05wmXQ1qbya53o1_1280.jpg"><img src="http://40.media.tumblr.com/7747230608fea774b5a84e571cd482b2/tumblr_ms6p05wmXQ1qbya53o1_1280.jpg" alt="Michelle Williams" class="img-responsive"></a>
+							<a href="http://40.media.tumblr.com/tumblr_m9z45v1ayE1qeaf1zo1_500.png" data-lightbox="gallery" data-title="Kate Bosworth" class="thumbnail"><img src="http://40.media.tumblr.com/tumblr_m9z45v1ayE1qeaf1zo1_500.png" alt="Kate Bosworth"></a>
 						</div>
 						<div>
-							<a target="_blank" href="ttp://36.media.tumblr.com/tumblr_mbu42eNqpB1ro2rf8o1_500.jpg"><img src="http://36.media.tumblr.com/tumblr_mbu42eNqpB1ro2rf8o1_500.jpg" alt="Erin Wasson" class="img-responsive"></a>
+							<a href="http://36.media.tumblr.com/tumblr_lt2f3aQR841qh7wudo1_400.jpg" data-lightbox="gallery" data-title="Kate Moss" class="thumbnail"><img src="http://36.media.tumblr.com/tumblr_lt2f3aQR841qh7wudo1_400.jpg" alt="Kate Moss"></a>
+						</div>
+
+					</div>
+
+					<div class="col-md-4">
+						<div>
+							<a href="http://36.media.tumblr.com/fb057f00c43eb5229de25a2338d9388f/tumblr_n4dl5dE8XU1qdksdzo1_r1_500.png" data-lightbox="gallery" data-title="Emma Stone" class="thumbnail"><img src="http://36.media.tumblr.com/fb057f00c43eb5229de25a2338d9388f/tumblr_n4dl5dE8XU1qdksdzo1_r1_500.png" alt="Emma Stone"></a>
 						</div>
 						<div>
-							<a target="_blank" href="http://40.media.tumblr.com/tumblr_mdfytdkjDe1ro2rf8o1_540.jpg"><img src="http://40.media.tumblr.com/tumblr_mdfytdkjDe1ro2rf8o1_540.jpg" alt="Cara Delevingne2" class="img-responsive"></a>
+							<a href="http://40.media.tumblr.com/7747230608fea774b5a84e571cd482b2/tumblr_ms6p05wmXQ1qbya53o1_1280.jpg" data-lightbox="gallery" data-title="Michelle Williams" class="thumbnail"><img src="http://40.media.tumblr.com/7747230608fea774b5a84e571cd482b2/tumblr_ms6p05wmXQ1qbya53o1_1280.jpg" alt="Michelle Williams"></a>
+						</div>
+						<div>
+							<a href="ttp://36.media.tumblr.com/tumblr_mbu42eNqpB1ro2rf8o1_500.jpg" data-lightbox="gallery" data-title="Erin Wasson" class="thumbnail"><img src="http://36.media.tumblr.com/tumblr_mbu42eNqpB1ro2rf8o1_500.jpg" alt="Erin Wasson"></a>
+						</div>
+						<div>
+							<a href="http://40.media.tumblr.com/tumblr_mdfytdkjDe1ro2rf8o1_540.jpg" data-lightbox="gallery" data-title="Cara Delevingne" class="thumbnail"><img src="http://40.media.tumblr.com/tumblr_mdfytdkjDe1ro2rf8o1_540.jpg" alt="Cara Delevingne2"></a>
 						</div>
 
 					</div>
@@ -91,11 +172,8 @@
 
 		</div>
 
-
-
-
-
-<
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.js"></script>
 
 	</body>
 </html>

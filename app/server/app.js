@@ -5,9 +5,12 @@ var app = express();
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  console.log(req, res);
   res.sendFile('index.html');
 });
+
+// tu dois créer des routes pour chaque pages html à servir
+// tu peux utiliser le même nom que la page html pour nommer ta route par exemple.
+
 app.get('/toto', function (req, res) {
   res.send('Hello toto!');
 });

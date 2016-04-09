@@ -1,0 +1,73 @@
+			/* INDEX HTML */
+
+body {
+	display: block;
+}
+
+.page-header {
+	border-bottom: 1px solid black;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-family: "Didot";
+	font-size: 38px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	line-height: 40px;
+}
+
+h1 a {
+	color: black;
+}
+
+h1 a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list {
+	list-style-type: none;
+	text-align: right;
+	font-family: Gotham-Book;
+	font-size: 10px;
+	text-transform: uppercase;
+	cursor: initial;
+}
+
+a {
+	text-decoration: none;
+	color: #77787b;
+}
+
+.list a:hover {
+	text-decoration: underline;
+	text-decoration-color: black;
+	color: #77787b;
+}
+
+.list li.active a {
+	color: black;
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+.pager {
+	margin: 20px 150px;
+}
+
+#copyright {
+	text-align: right;
+	padding: 20px 50px 20px 0px;
+}
+
+
+				/* CONTACT HTML */
+
+h2 {
+	font-family: "Montserrat", arial, sans-serif;
+	font-size: 30px;
+}

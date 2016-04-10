@@ -5,17 +5,22 @@ var app = express();
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.sendFile('index.html');
+  res.sendFile('/Users/Titi/myfirstproject/app/server/public/view/index.html');
 });
 
 // tu dois créer des routes pour chaque pages html à servir
 // tu peux utiliser le même nom que la page html pour nommer ta route par exemple.
 
-app.get('/toto', function (req, res) {
-  res.send('Hello toto!');
+app.get('/about', function (req, res) {
+  res.sendFile('/Users/Titi/myfirstproject/app/server/public/view/about.html');
 });
-app.get('/tutu', function (req, res) {
-  res.send('Hello tutu!');
+
+app.get('/archive', function (req, res) {
+  res.sendFile('/Users/Titi/myfirstproject/app/server/public/view/archive.html');
+});
+
+app.get('/contact', function (req, res) {
+  res.sendFile('/Users/Titi/myfirstproject/app/server/public/view/contact.html');
 });
 
 app.listen(2000, function () {
